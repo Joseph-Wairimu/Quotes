@@ -12,7 +12,7 @@
                 <ul class="list">
                 <li *ngFor='let quote of quotes;let i = index' class="back">
                     
-                 <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>  
+                 <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>  
     
                     <div class="d-flex space ">
                     <p><span id="font">Author:</span> {{quote.author}}</p>
@@ -20,6 +20,7 @@
                    </div>
                    <p align="end">Date:{{quote.completeDate}}</p>
                    <button (click)='Hide(i)' class="btn btn-primary">Show Quote</button>
+                 
                 </li>
                 </ul>
 </div>
