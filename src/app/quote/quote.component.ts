@@ -11,7 +11,9 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'Mickey Rooney', 'You always pass failure on the way to success',new Date(2020,3,14),'Joseph'),
    
   ];
-
+  Hide(index:any){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit(): void {

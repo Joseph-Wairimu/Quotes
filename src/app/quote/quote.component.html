@@ -9,13 +9,17 @@
         <app-quote-form></app-quote-form>
             </div>
             <div class="col-md-6" >
-                <div *ngFor='let quote of quotes;let i = index' class="back">
+                <ul class="list">
+                <li *ngFor='let quote of quotes;let i = index' class="back">
                     
-                    <p>{{quote.quote}}</p>
+                 <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>  
+    
                     <div class="d-flex space ">
                     <p><span id="font">Author:</span> {{quote.author}}</p>
                     <p align="end"><span  id="font">Submitted by: </span> {{quote.name}}</p>
                    </div>
-                </div>
+                   <button (click)='Hide(i)' class="btn btn-primary">Toggle</button>
+                </li>
+                </ul>
 </div>
 
