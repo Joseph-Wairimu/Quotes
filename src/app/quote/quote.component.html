@@ -18,7 +18,7 @@
                     <p><span id="font">Author:</span> {{quote.author}}</p>
                     <p align="end"><span  id="font">Submitted by: </span> {{quote.name}}</p>
                    </div>
-                   <p align="end">Date:{{quote.completeDate}}</p>
+                   <p align="end"><span id="font">Date:</span> {{quote.completeDate|date}}</p>
                    <button (click)='Hide(i)' class="btn btn-primary">Show Quote</button>
                  
                 </li>
