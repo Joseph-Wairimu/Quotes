@@ -9,7 +9,10 @@
         <app-quote-form></app-quote-form>
             </div>
             <div class="col-md-6" >
-                
+                <div *ngFor='let quote of quotes;let i = index'>
+                    <h2>{{quote.author}}</h2>
+                    <p>{{quote.quote}}</p>
+                    <h5>Submitted by: {{quote.name}}</h5>
                     </div>
 </div>
 
