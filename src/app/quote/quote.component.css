@@ -1,1 +1,6 @@
 .head{background-color: #1572A1;}
+.space{justify-content: space-between;}
+.back{
+    border: 1px solid black;
+    opacity: 0.6;
+}

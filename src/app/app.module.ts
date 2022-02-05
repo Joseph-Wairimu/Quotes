@@ -7,6 +7,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
