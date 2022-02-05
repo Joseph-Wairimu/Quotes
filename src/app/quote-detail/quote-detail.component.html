@@ -1,2 +1,8 @@
 <p>{{quote.quote}}</p>
+
+
+
+<p>Vote : {{vote}} </p>
+ <button class="btn btn-outline-success" (click)="count('add')">like</button>
+ <button style="margin-left: 1rem;" class="btn btn-outline-danger" (click)="count('minus')" >dislike</button><br><br>
 <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete</button>
