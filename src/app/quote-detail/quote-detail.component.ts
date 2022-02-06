@@ -22,7 +22,11 @@ export class QuoteDetailComponent implements OnInit {
     
     type==='add'?this.vote++:this.vote--
   }
-  
+  votee=0;
+  countt(type:string){
+    
+    type==='add'?this.votee++:this.vote--
+  }
   constructor() { }
 
   ngOnInit(): void {

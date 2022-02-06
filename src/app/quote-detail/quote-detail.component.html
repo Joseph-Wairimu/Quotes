@@ -1,8 +1,12 @@
 <p>{{quote.quote}}</p>
 
 
+<div class="d-flex">
+<p class="space"> {{vote}} </p>
+<p class="spacee">{{votee}}</p>
+</div>
 
-<p>Vote : {{vote}} </p>
- <button class="btn btn-outline-success" (click)="count('add')">like</button>
- <button style="margin-left: 1rem;" class="btn btn-outline-danger" (click)="count('minus')" >dislike</button><br><br>
+ <i style="color: green;"  class="bi bi-heart-fill space"(click)="count('add')"></i>
+
+ <i style="margin-left: 2.5rem; color: red;"  class="bi bi-heartbreak-fill spacee"  (click)="countt('add')" ></i><br><br>
 <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete</button>
